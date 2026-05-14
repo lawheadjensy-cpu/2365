@@ -1,88 +1,247 @@
 <!DOCTYPE html>
-<html lang='pt-BR'>
+<html lang="pt-BR">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta name='description' content='Indústria dos Óculos - Fabricação e venda de óculos de grau e solares com qualidade premium. Atacado e varejo. CNPJ regularizado.'>
-    <meta name='robots' content='index, follow'>
-    <title>INDÚSTRIA DOS ÓCULOS | Óculos de Grau e Solar</title>
-    <link rel='icon' href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👓</text></svg>'>
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; }
-        :root { --cor-primaria: #1e40af; --gradiente: linear-gradient(135deg, #1e40af, #3b82f6); }
-        
-        header { position: fixed; top: 0; width: 100%; background: white; box-shadow: 0 2px 15px rgba(0,0,0,0.1); z-index: 1000; padding: 1rem 0; }
-        .logo { font-size: 2rem; font-weight: 800; background: var(--gradiente); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero { background: var(--gradiente); color: white; padding: 200px 20px 120px; text-align: center; }
-        .section { padding: 100px 20px; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .btn { padding: 14px 36px; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-block; margin: 10px; }
-        .btn-primary { background: white; color: var(--cor-primaria); }
-        .whatsapp { position: fixed; bottom: 25px; right: 25px; background: #25D366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; box-shadow: 0 5px 20px rgba(37,211,102,0.5); z-index: 9999; text-decoration: none; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Privacidade e Cookies</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(180deg,#ff0f7b,#ff4da6);
+padding:12px;
+}
+
+/* CONTAINER */
+.cookie-box{
+width:100%;
+max-width:360px;
+margin:0 auto;
+background:#ffffff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* HEADER */
+.header{
+background:linear-gradient(135deg,#ff0080,#d6006b);
+padding:16px;
+display:flex;
+align-items:center;
+gap:10px;
+color:#fff;
+}
+
+.icon{
+width:38px;
+height:38px;
+border-radius:10px;
+background:rgba(255,255,255,0.15);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:16px;
+backdrop-filter:blur(6px);
+}
+
+.header h1{
+font-size:15px;
+font-weight:700;
+}
+
+.header p{
+font-size:10px;
+opacity:.9;
+}
+
+/* CONTENT */
+.content{
+padding:14px;
+}
+
+/* BOTÕES */
+.buttons{
+display:flex;
+flex-direction:column;
+gap:8px;
+margin-bottom:14px;
+}
+
+.btn{
+width:100%;
+padding:13px;
+border:none;
+border-radius:12px;
+font-size:12px;
+font-weight:600;
+cursor:pointer;
+transition:.2s;
+}
+
+/* ESTILOS */
+.accept{
+background:linear-gradient(135deg,#ff0080,#ff4da6);
+color:#fff;
+box-shadow:0 5px 14px rgba(255,0,128,0.3);
+}
+
+.reject{
+background:#f1f5f9;
+color:#111827;
+}
+
+.custom{
+background:#fff;
+border:1px solid #ffc1dc;
+color:#ff0080;
+}
+
+/* TEXTO */
+.text{
+font-size:11px;
+line-height:1.5;
+text-align:center;
+color:#64748b;
+margin-bottom:12px;
+}
+
+/* CARDS */
+.cards{
+display:flex;
+flex-direction:column;
+gap:8px;
+margin-bottom:12px;
+}
+
+.card{
+padding:12px;
+border-radius:12px;
+background:#fff0f6;
+border:1px solid #ffd1e6;
+}
+
+.card h3{
+font-size:11px;
+margin-bottom:3px;
+color:#d6006b;
+}
+
+.card p{
+font-size:9px;
+color:#6b7280;
+}
+
+/* FOOTER */
+.footer{
+text-align:center;
+font-size:9px;
+color:#6b7280;
+}
+
+.footer a{
+color:#ff0080;
+text-decoration:none;
+font-weight:600;
+}
+
+</style>
 </head>
+
 <body>
 
-    <header>
-        <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
-            <div class="logo">INDÚSTRIA DOS ÓCULOS</div>
-            <nav>
-                <a href="#sobre" style="margin:0 15px; color:#333; text-decoration:none;">Sobre</a>
-                <a href="#contato" style="margin:0 15px; color:#333; text-decoration:none;">Contato</a>
-                <a href="#termos" style="margin:0 15px; color:#333; text-decoration:none;">Termos</a>
-            </nav>
-        </div>
-    </header>
+<div class="cookie-box">
 
-    <section class="hero">
-        <div class="container">
-            <h1 style="font-size: 3.5rem;">👓 INDÚSTRIA DOS ÓCULOS</h1>
-            <p style="font-size: 1.5rem; margin: 20px 0;">Fabricação própria • Qualidade Premium • Preços de Fábrica</p>
-            <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
-        </div>
-    </section>
+<!-- HEADER -->
+<div class="header">
+<div class="icon">🍪</div>
 
-    <section id="sobre" class="section" style="background:#f8fafc;">
-        <div class="container" style="text-align:center;">
-            <h2>Sobre a Empresa</h2>
-            <div style="max-width:950px; margin:40px auto; background:white; padding:50px; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,0.08);">
-                <h3>INDÚSTRIA DOS ÓCULOS</h3>
-                <p>Empresa especializada na fabricação e comercialização de óculos de grau e solares com alto padrão de qualidade.</p>
-                <br>
-                <p><strong>Razão Social:</strong> INDÚSTRIA DOS ÓCULOS</p>
-                <p><strong>CNPJ:</strong> 25.957.726/0001-48</p>
-                <p><strong>Telefone:</strong> (11) 3984-1323</p>
-                <p><strong>E-mail:</strong> marcioer@gmail.com</p>
-                <p><strong>CEP:</strong> 09.715-140 - Guarulhos/SP</p>
-            </div>
-        </div>
-    </section>
+<div>
+<h1>Privacidade e Cookies</h1>
+<p>Gerencie sua experiência online</p>
+</div>
+</div>
 
-    <section id="contato" class="section">
-        <div class="container" style="text-align:center;">
-            <h2>Entre em Contato</h2>
-            <p style="margin:25px 0; font-size:1.2rem;">Atendemos ópticas, revendedores e consumidor final.</p>
-            
-            <div style="background:#f1f5f9; padding:50px; border-radius:16px; max-width:600px; margin:0 auto;">
-                <p><strong>📞 Telefone:</strong> (11) 3984-1323</p>
-                <p><strong>✉️ E-mail:</strong> marcioer@gmail.com</p>
-                <p><strong>📍 Endereço:</strong> Guarulhos - SP | CEP 09.715-140</p>
-            </div>
-        </div>
-    </section>
+<!-- CONTENT -->
+<div class="content">
 
-    <!-- WhatsApp -->
-    <a href="https://wa.me/551139841323" target="_blank" class="whatsapp">💬</a>
+<!-- BOTÕES -->
+<div class="buttons">
 
-    <footer style="background:#0f172a; color:white; text-align:center; padding:60px 20px;">
-        <p><strong>INDÚSTRIA DOS ÓCULOS</strong></p>
-        <p>CNPJ: 25.957.726/0001-48</p>
-        <p>© 2026 - Todos os direitos reservados.</p>
-    </footer>
+<button class="btn accept" onclick="aceitar()">
+Aceitar e Continuar
+</button>
+
+<button class="btn reject" onclick="rejeitar()">
+Rejeitar
+</button>
+
+<button class="btn custom" onclick="personalizar()">
+Configurar
+</button>
+
+</div>
+
+<!-- TEXTO -->
+<div class="text">
+Utilizamos cookies para melhorar sua navegação,
+personalizar conteúdos e oferecer uma experiência melhor.
+</div>
+
+<!-- CARDS -->
+<div class="cards">
+
+<div class="card">
+<h3>🔒 Cookies Essenciais</h3>
+<p>Necessários para funcionamento do site.</p>
+</div>
+
+<div class="card">
+<h3>📊 Cookies de Desempenho</h3>
+<p>Melhoram sua navegação e experiência.</p>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+Veja nossa <a href="#">Política de Privacidade</a>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const LINK = "https://brasil-dos-nomes.netlify.app/"
+
+function aceitar(){
+localStorage.setItem("cookies","accepted")
+location.href = LINK
+}
+
+function rejeitar(){
+localStorage.setItem("cookies","rejected")
+location.href = LINK
+}
+
+function personalizar(){
+localStorage.setItem("cookies","custom")
+location.href = LINK
+}
+
+</script>
 
 </body>
 </html>
